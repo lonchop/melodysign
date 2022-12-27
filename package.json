@@ -1,14 +1,22 @@
 {
   "name": "melodysign",
   "version": "1.0.0",
+  "homepage": "https://lonchop.github.io/melodysign/",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/styles.css --watch",
+    "prod": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/styles.css --minify",
+    "predeploy": "npm run prod",
+    "deploy": "gh-pages -d public"
   },
   "author": "Orangel Gonzalez",
   "license": " MIT",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
