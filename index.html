@@ -5,34 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" type="image/svg+xml" href="./assets/melodysign-icon.svg" />
     <title>MelodySign</title>
   </head>
-  <body class="bg-[#FFC400]">
-    <div class="w-full h-screen">
-      <header class="flex justify-center mt-[60px] mb-[20px] w-full">
+  <body class="bg-[#ffcd49]">
+    <header class="w-full h-screen">
+      <section class="flex justify-center mt-[60px] mb-[20px] w-full">
         <div class="flex justify-center items-center mr-[8px]">
-          <img class="w-12 h-12" src="./assets/melodysign-logo.png" alt="icon">
+          <img
+            class="w-12 h-12"
+            src="./assets/melodysign-logo.png"
+            alt="icon"
+          />
         </div>
-        <h1 class="text-[48px] font-quicksand font-semibold text-[#FEFEFD]">
+        <h1 class="text-[48px] font-quicksand font-semibold text-[#272727]">
           MelodySign
         </h1>
-      </header>
-      <main class="flex justify-center">
+      </section>
+      <section class="flex justify-center">
+        <img class="h-96 mr-[12px]" src="./assets/union.svg" alt="union" />
         <div
           class="border-y-2 border-l-4 border-[#313131] border-r-transparent h-96 w-11/12"
         >
-          <p class="text-[#2C2D43] font-quicksand text-[20px] mt-6 ml-4 font-medium">
-            Servicio de composición de melodías, música y
-            letras de canciones, es una buena opción para tener una canción
-            personalizada, donde puedes especificar el tema y el estilo de la
-            canción para componer. Una excelente opción para aquellos que desean
-            tener su propia canción personalizada, ya sea para uso personal o
-            comercial. Si estás interesado en contratar a <b>MelodySign</b> envianos tu
+          <p
+            class="text-[#272727] font-quicksand text-[20px] mt-6 ml-4 font-medium"
+          >
+            Servicio de composición de melodías, música y letras de canciones,
+            es una buena opción para tener una canción personalizada, donde
+            puedes especificar el tema y el estilo de la canción para componer.
+            Una excelente opción para aquellos que desean tener su propia
+            canción personalizada, ya sea para uso personal o comercial. Si
+            estás interesado en contratar a <b>MelodySign</b> envianos tu
             información y contactanos.
           </p>
 
@@ -41,32 +51,41 @@
           ></div>
           <form class="flex flex-col gap-y-2 justify-center items-center mt-6">
             <input
-              class="font-quicksand w-[400px] h-10 rounded-sm bg-[#FEFEFD]"
+              class="font-quicksand w-[400px] h-10 rounded-sm bg-[#FEFEFD] outline-[#0099a3] border-none pl-4 font-medium text-[#272727]"
               type="text"
               name="nombre"
-              placeholder="  First Name"
+              placeholder="First Name"
             />
             <input
-              class="font-quicksand w-[400px] h-10 rounded-sm bg-[#FEFEFD]"
+              class="font-quicksand w-[400px] h-10 rounded-sm bg-[#FEFEFD] outline-[#0099a3] border-none pl-4 font-medium text-[#272727]"
               type="email"
               name="email"
-              placeholder="  Enter Your Email"
+              placeholder="Enter Your Email"
             />
             <button
-              class="font-semibold font-quicksand w-[400px] h-10 bg-[#2C2D43] text-white rounded-3xl"
+              class="font-semibold font-quicksand w-[400px] h-10 bg-[#0099a3] text-[#FEFEFD] rounded-3xl"
               type="submit"
             >
               Send
             </button>
           </form>
         </div>
-      </main>
-    </div>
-    <footer class="bg-[#313131] flex justify-center items-center w-full h-20">
+      </section>
+    </header>
+
+    <footer class="bg-[#272727] flex justify-center items-center w-full h-1/4">
       <ul>
-        <li class="text-[#FEFEFD] font-quicksand font-normal">
+        <li class="text-[#FEFEFD] font-quicksand font-normal mt-8">
           Copyright © 2022 MelodySign
         </li>
+        <div class="flex justify-center items-center space-x-6">
+          <a target="_blank" href="https://github.com/lonchop">
+            <img src="./assets/github-icon.svg" alt="github-icon" />
+          </a>
+          <a target="_blank" href="https://es.fiverr.com/goranjose?up_rollout=true">
+            <img class="mb-[2px]" src="./assets/fiverr-icon.svg" alt="fiverr-icon" />
+          </a>
+        </div>
       </ul>
     </footer>
   </body>
