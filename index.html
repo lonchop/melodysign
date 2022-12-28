@@ -4,33 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>MelodySign</title>
   </head>
-  <body>
-    <header class="flex justify-center">
-      <h1 class="text-4xl font-quicksand font-semibold">MelodySign</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Información detallada sobre tu producto o servicio</h2>
-        <p>MelodySign es un servicio de composición de melodías, música y letras de canciones, es una buena opción para tener una canción personalizada, donde puedes especificar el tema y el estilo de la canción para componer. Una excelente opción para aquellos que desean tener su propia canción personalizada, ya sea para uso personal o comercial. Si estás interesado en contratar a MelodySign envianos tu información y contactanos.</p>
-        <!-- <img src="ruta de tu imagen" /> -->
-      </section>
-      <!-- <form>
-        <h2>Formulario de contacto</h2>
-        <input type="text" name="nombre" placeholder="Nombre" />
-        <input type="email" name="email" placeholder="Correo electrónico" />
-        <textarea name="mensaje" placeholder="Mensaje"></textarea>
-        <button type="submit">Enviar</button>
-      </form> -->
-    </main>
-    <footer>
-      <p>Información adicional sobre tu empresa o producto</p>
+  <body class="bg-[#FFC400]">
+    <div class="w-full h-screen">
+      <header class="flex justify-center mt-[60px] mb-[20px] w-full">
+        <h1 class="text-[48px] font-quicksand font-semibold text-[#FEFEFD]">
+          MelodySign
+        </h1>
+      </header>
+      <main class="flex justify-center">
+        <div
+          class="border-y-2 border-l-4 border-[#313131] border-r-transparent h-96 w-11/12"
+        >
+          <p class="text-[#2C2D43] font-quicksand text-[20px]">
+            MelodySign es un servicio de composición de melodías, música y
+            letras de canciones, es una buena opción para tener una canción
+            personalizada, donde puedes especificar el tema y el estilo de la
+            canción para componer. Una excelente opción para aquellos que desean
+            tener su propia canción personalizada, ya sea para uso personal o
+            comercial. Si estás interesado en contratar a MelodySign envianos tu
+            información y contactanos.
+          </p>
+          <form class="flex flex-col gap-y-3 justify-center items-center mt-10">
+            <h2 class="text-[20px] font-semibold font-quicksand text-[#2C2D43]">
+              Formulario de contacto
+            </h2>
+            <input
+              class="font-quicksand w-[400px] h-10 rounded-sm bg-[#FEFEFD]"
+              type="text"
+              name="nombre"
+              placeholder="First Name"
+            />
+            <input
+              class="font-quicksand w-[400px] h-10 rounded-sm bg-[#FEFEFD]"
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+            />
+            <button
+              class="font-semibold font-quicksand w-[400px] h-10 bg-[#2C2D43] text-white rounded-3xl"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer class="bg-[#313131] flex justify-center items-center w-full h-20">
       <ul>
-        <li><a href="#">Enlace a redes sociales</a></li>
-        <li><a href="#">Políticas de privacidad</a></li>
+        <li class="text-[#FEFEFD] font-quicksand font-normal">
+          Copyright © 2022 MelodySign
+        </li>
       </ul>
     </footer>
   </body>
