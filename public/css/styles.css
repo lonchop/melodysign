@@ -549,6 +549,10 @@ video {
   margin-bottom: 2px;
 }
 
+.mt-\[48px\] {
+  margin-top: 48px;
+}
+
 .flex {
   display: flex;
 }
@@ -575,6 +579,26 @@ video {
 
 .h-\[60px\] {
   height: 60px;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[52\] {
+  height: 52;
+}
+
+.h-\[52px\] {
+  height: 52px;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .w-full {
