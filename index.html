@@ -15,55 +15,59 @@
     <link rel="icon" type="image/svg+xml" href="./assets/melodysign-icon.svg" />
     <title>MelodySign</title>
   </head>
-  <body class="bg-[#ffcd49]">
-    <header class="w-full h-screen">
-      <section class="flex justify-center mt-[60px] mb-[20px] w-full">
+  <body class="bg-background-color">
+    <header class="w-full lg:h-screen mb-[80px] lg:mb-[0px]">
+      <section class="flex justify-center mt-[48px] mb-[20px] w-full">
         <div class="flex justify-center items-center mr-[8px]">
           <img
-            class="w-12 h-12"
-            src="./assets/melodysign-logo.png"
+            class="w-[40px] h-[40px] md:w-[48px] md:h-[48px] lg:w-[60px] lg:h-[60px]"
+            src="./assets/melodysign-logo.svg"
             alt="icon"
           />
         </div>
-        <h1 class="text-[48px] font-quicksand font-semibold text-[#272727]">
+        <h1
+          class="text-[32px] md:text-[40px] lg:text-[48px] font-quicksand font-semibold text-primary-color"
+        >
           MelodySign
         </h1>
       </section>
-      <section class="flex justify-center">
-        <img class="h-96 mr-[12px]" src="./assets/union.svg" alt="union" />
+      <section class="flex justify-center mx-[8px] lg:mx[8px]">
+        <img
+          class="w-[44px] h-[400px] lg:w-[44px] lg:h-[400px] mr-[8px] lg:mr-[8px]"
+          src="./assets/union.svg"
+          alt="union"
+        />
         <div
-          class="border-y-2 border-l-4 border-[#313131] border-r-transparent h-96 w-11/12"
+          class="border-y-2 border-l-4 border-secondary-color border-l-black-color border-r-transparent h-[400px] w-11/12 lg:h-[400px] lg:w-11/12"
         >
           <p
-            class="text-[#272727] font-quicksand text-[20px] mt-6 ml-4 font-medium"
+            class="text-black-color font-quicksand text-base md:text-[20px] lg:text-[20px] mt-[12px] md:mt-[52px] lg:mt-[60px] ml-2 mr-2 md:ml-[80px] md:mr-[80px] lg:ml-[200px] lg:mr-[200px] font-medium"
           >
-            Servicio de composición de melodías, música y letras de canciones,
-            es una buena opción para tener una canción personalizada, donde
-            puedes especificar el tema y el estilo de la canción para componer.
-            Una excelente opción para aquellos que desean tener su propia
-            canción personalizada, ya sea para uso personal o comercial. Si
-            estás interesado en contratar a <b>MelodySign</b> envianos tu
-            información y contactanos.
+            Excelente para aquellos que desean tener su canción personalizada,
+            ya sea para uso personal o comercial. Si estás interesado en
+            contratar a <b>MelodySign</b> envianos tu información.
           </p>
 
           <div
-            class="border-y-2 border-t-transparent border-[#313131] h-12 w-full"
+            class="border-y-2 border-t-transparent border-secondary-color h-[32px] md:h-[60px] lg:h-[60px] w-full"
           ></div>
-          <form class="flex flex-col gap-y-2 justify-center items-center mt-6">
+          <form
+            class="flex flex-col gap-y-2 justify-center items-center mt-6 mr-[40px] lg:mr-[52px]"
+          >
             <input
-              class="font-quicksand w-[400px] h-10 rounded-sm bg-[#FEFEFD] outline-[#0099a3] border-none pl-4 font-medium text-[#272727]"
+              class="font-quicksand w-[200px] md:w-[320px] lg:w-[400px] h-10 rounded-sm bg-white-color outline-primary-color border-none pl-4 font-medium text-black-color"
               type="text"
               name="nombre"
               placeholder="First Name"
             />
             <input
-              class="font-quicksand w-[400px] h-10 rounded-sm bg-[#FEFEFD] outline-[#0099a3] border-none pl-4 font-medium text-[#272727]"
+              class="font-quicksand w-[200px] md:w-[320px] lg:w-[400px] h-10 rounded-sm bg-white-color outline-primary-color border-none pl-4 font-medium text-black-color"
               type="email"
               name="email"
               placeholder="Enter Your Email"
             />
             <button
-              class="font-semibold font-quicksand w-[400px] h-10 bg-[#0099a3] text-[#FEFEFD] rounded-3xl"
+              class="font-semibold font-quicksand w-[200px] md:w-[320px] lg:w-[400px] h-10 bg-primary-color text-white-color rounded-3xl"
               type="submit"
             >
               Send
@@ -73,17 +77,26 @@
       </section>
     </header>
 
-    <footer class="bg-[#272727] flex justify-center items-center w-full h-1/4">
+    <footer
+      class="bg-black-color flex justify-center items-center w-full h-[160px]"
+    >
       <ul>
-        <li class="text-[#FEFEFD] font-quicksand font-normal mt-8">
+        <li class="text-white-color font-quicksand font-normal mt-8 text-base">
           Copyright © 2022 MelodySign
         </li>
         <div class="flex justify-center items-center space-x-6">
           <a target="_blank" href="https://github.com/lonchop">
             <img src="./assets/github-icon.svg" alt="github-icon" />
           </a>
-          <a target="_blank" href="https://es.fiverr.com/goranjose?up_rollout=true">
-            <img class="mb-[2px]" src="./assets/fiverr-icon.svg" alt="fiverr-icon" />
+          <a
+            target="_blank"
+            href="https://es.fiverr.com/goranjose?up_rollout=true"
+          >
+            <img
+              class="mb-[2px]"
+              src="./assets/fiverr-icon.svg"
+              alt="fiverr-icon"
+            />
           </a>
         </div>
       </ul>
