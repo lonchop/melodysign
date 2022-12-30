@@ -16,7 +16,7 @@ MelodySign is a landing page, where you can get in touch by filling out a form, 
 
 ## Installation Steps:
 
-1. Clone the repository on your local machine using git  `git clone https://github.com/tu-usuario/melodysign.git`
+1. Clone the repository on your local machine using git  `git clone https://github.com/lonchop/melodysign.git`
 2. Access the project directory with `cd melodysign`
 3. Install the project dependencies `npm install`
 4. Start the project with `npm run dev`
