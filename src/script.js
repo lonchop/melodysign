@@ -14,7 +14,7 @@ async function handleSubmit(event) {
     },
   });
   if (response.ok) {
-    $form.reset();
+    this.reset();
     alert("Thank you for contacting MelodySign, I will write to you soon.");
   } 
   // else {
