@@ -54,12 +54,13 @@
           ></div>
           <form
             class="mt-6 mr-[40px] flex flex-col items-center justify-center gap-y-2 lg:mr-[52px]"
-            action="https://formsubmit.co/99d04d608053c33f20cc5634223b4d40"
+            id="form"
+            action="https://formspree.io/f/xgebewyg"
             method="POST"
           >
             <input
               class="h-10 w-[200px] rounded-sm border-none bg-white-color pl-4 font-quicksand font-medium text-black-color outline-primary-color md:w-[320px] lg:w-[400px]"
-              name="nombre"
+              name="name"
               type="text"
               placeholder="First Name"
             />
@@ -75,22 +76,9 @@
             >
               Send
             </button>
-
-            <input
-              type="hidden"
-              name="_next"
-              value="https://melodysign.vercel.app/"
-            />
-            <input
-              type="hidden"
-              name="_subject"
-              value="MelodySign - formsubmit.co"
-            />
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="Gracias por contactar con MelodySign"
-            />
+            <a class="hidden" href="mailto:pewer18@gmail.com" id="mailto"
+              >mail</a
+            >
           </form>
         </div>
       </section>
@@ -122,5 +110,6 @@
         </div>
       </ul>
     </footer>
+    <script src="../src/script.js"></script>
   </body>
 </html>
