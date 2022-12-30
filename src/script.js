@@ -15,13 +15,14 @@ async function handleSubmit(event) {
   });
   if (response.ok) {
     $form.reset();
-    alert("Gracias por contatarme te escribire pronto");
-  } else {
-    $buttonMailto.setAttribute(
-      "href",
-      `mailto:pewer18@gmail.com?subject=${form.get("name")}&body=${form.get(
-        "email"
-      )}`);
-    $buttonMailto.click();
-  }
+    alert("Thank you for contacting MelodySign, I will write to you soon.");
+  } 
+  // else {
+  //   $buttonMailto.setAttribute(
+  //     "href",
+  //     `mailto:pewer18@gmail.com?subject=${form.get("name")}&body=${form.get(
+  //       "email"
+  //     )}`);
+  //   $buttonMailto.click();
+  // }
 }
