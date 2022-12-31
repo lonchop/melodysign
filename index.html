@@ -59,25 +59,29 @@
             method="POST"
           >
             <input
-              class="h-10 w-[200px] rounded-sm border-none bg-white-color pl-4 font-quicksand font-medium text-black-color outline-primary-color md:w-[320px] lg:w-[400px]"
+              class="h-10 w-[200px] rounded-sm border-[2px] border-solid border-transparent bg-white-color pl-4 font-quicksand font-medium text-black-color outline-primary-color md:w-[320px] lg:w-[400px]"
+              id="name"
               name="name"
               type="text"
               placeholder="First Name"
             />
             <input
-              class="h-10 w-[200px] rounded-sm border-none bg-white-color pl-4 font-quicksand font-medium text-black-color outline-primary-color md:w-[320px] lg:w-[400px]"
+              class="h-10 w-[200px] rounded-sm border-[2px] border-solid border-transparent bg-white-color pl-4 font-quicksand font-medium text-black-color outline-primary-color md:w-[320px] lg:w-[400px]"
+              id="email"
               name="email"
               type="email"
               placeholder="Enter Your Email"
             />
             <button
               class="h-10 w-[200px] rounded-3xl bg-primary-color font-quicksand font-semibold text-white-color md:w-[320px] lg:w-[400px]"
+              id="btn-send"
               type="submit"
             >
               Send
             </button>
-            <!-- <a class="hidden" href="mailto:pewer18@gmail.com" id="mailto"
-              >mail</a> -->
+            <span id="alert" class="hidden"
+              >Por favor llene el formulario correctamente</span
+            >
           </form>
         </div>
       </section>
@@ -109,6 +113,6 @@
         </div>
       </ul>
     </footer>
-    <script src="../src/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
