@@ -640,6 +640,10 @@ video {
   border-radius: 1.5rem;
 }
 
+.border-\[2px\] {
+  border-width: 2px;
+}
+
 .border-y-2 {
   border-top-width: 2px;
   border-bottom-width: 2px;
@@ -649,13 +653,17 @@ video {
   border-left-width: 4px;
 }
 
-.border-none {
-  border-style: none;
+.border-solid {
+  border-style: solid;
 }
 
 .border-secondary-color {
   --tw-border-opacity: 1;
   border-color: rgb(25 25 25 / var(--tw-border-opacity));
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .border-l-black-color {
