@@ -1,5 +1,5 @@
 const $form = document.getElementById("form");
-const $buttonMailto = document.getElementById("mailto");
+// const $buttonMailto = document.getElementById("mailto");
 
 $form.addEventListener("submit", handleSubmit);
 
