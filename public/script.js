@@ -1,9 +1,9 @@
 const $form = document.getElementById("form");
 // const $buttonMailto = document.getElementById("mailto");
 
-$form.addEventListener("submit", handleSubmit);
+$form.addEventListener("submit", sendEmail);
 
-async function handleSubmit(event) {
+async function sendEmail(event) {
   event.preventDefault();
   const form = new FormData(this);
   const response = await fetch(this.action, {
@@ -16,13 +16,14 @@ async function handleSubmit(event) {
   if (response.ok) {
     this.reset();
     alert("Thank you for contacting MelodySign, I will write to you soon.");
-  } 
-  // else {
-  //   $buttonMailto.setAttribute(
-  //     "href",
-  //     `mailto:pewer18@gmail.com?subject=${form.get("name")}&body=${form.get(
-  //       "email"
-  //     )}`);
-  //   $buttonMailto.click();
-  // }
+  }
 }
+
+// else {
+//   $buttonMailto.setAttribute(
+//     "href",
+//     `mailto:pewer18@gmail.com?subject=${form.get("name")}&body=${form.get(
+//       "email"
+//     )}`);
+//   $buttonMailto.click();
+// }
