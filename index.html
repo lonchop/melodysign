@@ -4,44 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" type="image/svg+xml" href="./assets/melodysign-icon.svg" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link type="image/svg+xml" href="./assets/melodysign-logo.svg" rel="icon" />
     <title>MelodySign</title>
   </head>
+
   <body class="bg-background-color">
-    <header class="w-full lg:h-screen mb-[80px] lg:mb-[0px]">
-      <section class="flex justify-center mt-[48px] mb-[20px] w-full">
-        <div class="flex justify-center items-center mr-[8px]">
+    <header class="mb-[80px] w-full lg:mb-[0px] lg:h-screen">
+      <section class="mt-[48px] mb-[20px] flex w-full justify-center">
+        <div class="mr-[8px] flex items-center justify-center">
           <img
-            class="w-[40px] h-[40px] md:w-[48px] md:h-[48px] lg:w-[60px] lg:h-[60px]"
+            class="h-[40px] w-[40px] md:h-[48px] md:w-[48px] lg:h-[60px] lg:w-[60px]"
             src="./assets/melodysign-logo.svg"
             alt="icon"
           />
         </div>
         <h1
-          class="text-[32px] md:text-[40px] lg:text-[48px] font-quicksand font-semibold text-primary-color"
+          class="font-quicksand text-[32px] font-semibold text-primary-color md:text-[40px] lg:text-[48px]"
         >
           MelodySign
         </h1>
       </section>
-      <section class="flex justify-center mx-[8px] lg:mx[8px]">
+      <section class="lg:mx[8px] mx-[8px] flex justify-center">
         <img
-          class="w-[44px] h-[400px] lg:w-[44px] lg:h-[400px] mr-[8px] lg:mr-[8px]"
+          class="mr-[8px] h-[400px] w-[44px] lg:mr-[8px] lg:h-[400px] lg:w-[44px]"
           src="./assets/union.svg"
           alt="union"
         />
         <div
-          class="border-y-2 border-l-4 border-secondary-color border-l-black-color border-r-transparent h-[400px] w-11/12 lg:h-[400px] lg:w-11/12"
+          class="h-[400px] w-11/12 border-y-2 border-l-4 border-secondary-color border-l-black-color border-r-transparent lg:h-[400px] lg:w-11/12"
         >
           <p
-            class="text-black-color font-quicksand text-base md:text-[20px] lg:text-[20px] mt-[12px] md:mt-[52px] lg:mt-[60px] ml-2 mr-2 md:ml-[80px] md:mr-[80px] lg:ml-[200px] lg:mr-[200px] font-medium"
+            class="mt-[12px] ml-2 mr-2 font-quicksand text-base font-medium text-black-color md:mt-[52px] md:ml-[80px] md:mr-[80px] md:text-[20px] lg:mt-[60px] lg:ml-[200px] lg:mr-[200px] lg:text-[20px]"
           >
             Excelente para aquellos que desean tener su canción personalizada,
             ya sea para uso personal o comercial. Si estás interesado en
@@ -49,48 +50,55 @@
           </p>
 
           <div
-            class="border-y-2 border-t-transparent border-secondary-color h-[32px] md:h-[52px] lg:h-[60px] w-full"
+            class="h-[32px] w-full border-y-2 border-secondary-color border-t-transparent md:h-[52px] lg:h-[60px]"
           ></div>
           <form
-            class="flex flex-col gap-y-2 justify-center items-center mt-6 mr-[40px] lg:mr-[52px]"
+            class="mt-6 mr-[40px] flex flex-col items-center justify-center gap-y-2 lg:mr-[52px]"
+            id="form"
+            action="https://formspree.io/f/xgebewyg"
+            method="POST"
           >
             <input
-              class="font-quicksand w-[200px] md:w-[320px] lg:w-[400px] h-10 rounded-sm bg-white-color outline-primary-color border-none pl-4 font-medium text-black-color"
+              class="h-10 w-[200px] rounded-sm border-none bg-white-color pl-4 font-quicksand font-medium text-black-color outline-primary-color md:w-[320px] lg:w-[400px]"
+              name="name"
               type="text"
-              name="nombre"
               placeholder="First Name"
             />
             <input
-              class="font-quicksand w-[200px] md:w-[320px] lg:w-[400px] h-10 rounded-sm bg-white-color outline-primary-color border-none pl-4 font-medium text-black-color"
-              type="email"
+              class="h-10 w-[200px] rounded-sm border-none bg-white-color pl-4 font-quicksand font-medium text-black-color outline-primary-color md:w-[320px] lg:w-[400px]"
               name="email"
+              type="email"
               placeholder="Enter Your Email"
             />
             <button
-              class="font-semibold font-quicksand w-[200px] md:w-[320px] lg:w-[400px] h-10 bg-primary-color text-white-color rounded-3xl"
+              class="h-10 w-[200px] rounded-3xl bg-primary-color font-quicksand font-semibold text-white-color md:w-[320px] lg:w-[400px]"
               type="submit"
             >
               Send
             </button>
+            <!-- <a class="hidden" href="mailto:pewer18@gmail.com" id="mailto"
+              >mail</a> -->
           </form>
         </div>
       </section>
     </header>
 
     <footer
-      class="bg-black-color flex justify-center items-center w-full h-[160px]"
+      class="flex h-[160px] w-full items-center justify-center bg-black-color"
     >
       <ul>
-        <li class="text-white-color font-quicksand font-normal mt-[20px] text-base">
+        <li
+          class="mt-[20px] font-quicksand text-base font-normal text-white-color"
+        >
           Copyright © 2022 MelodySign
         </li>
-        <div class="flex justify-center items-center space-x-6">
-          <a target="_blank" href="https://github.com/lonchop">
+        <div class="flex items-center justify-center space-x-6">
+          <a href="https://github.com/lonchop/melodysign" target="_blank">
             <img src="./assets/github-icon.svg" alt="github-icon" />
           </a>
           <a
-            target="_blank"
             href="https://es.fiverr.com/goranjose?up_rollout=true"
+            target="_blank"
           >
             <img
               class="mb-[2px]"
@@ -101,5 +109,6 @@
         </div>
       </ul>
     </footer>
+    <script src="../src/script.js"></script>
   </body>
 </html>
