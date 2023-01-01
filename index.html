@@ -53,7 +53,7 @@
             class="h-[32px] w-full border-y-2 border-secondary-color border-t-transparent md:h-[52px] lg:h-[60px]"
           ></div>
           <form
-            class="mt-6 mr-[40px] flex flex-col items-center justify-center gap-y-2 lg:mr-[52px]"
+            class="mt-6 mr-[32px] flex flex-col items-center justify-center gap-y-2 lg:mr-[52px]"
             id="form"
             action="https://formspree.io/f/xgebewyg"
             method="POST"
@@ -79,10 +79,16 @@
             >
               Send
             </button>
-            <span id="alert" class="hidden"
-              >Por favor llene el formulario correctamente</span
-            >
           </form>
+          <div class="mr-[40px]">
+            <p
+              id="error"
+              class="hidden text-center font-quicksand text-base font-normal text-black-color"
+            >
+              <span class="font-semibold">Error:</span> Por favor rellene el
+              formulario correctamente
+            </p>
+          </div>
         </div>
       </section>
     </header>
@@ -113,6 +119,43 @@
         </div>
       </ul>
     </footer>
-    <script src="./script.js"></script>
+
+    <!-- Modal -->
+    <section
+      class="transition-display fixed top-0 left-0 right-0 bottom-0 flex bg-black-color-bd duration-1000"
+      id="modal"
+    >
+      <div
+        class="m-auto grid w-[320px] place-items-center rounded-md bg-white-color md:w-[400px] lg:w-[480px]"
+      >
+        <div class="flex w-[320px] justify-end md:w-[400px] lg:w-[480px]">
+          <div>
+            <img src="./assets/modal-image.svg" />
+          </div>
+          <div
+            class="mr-[8px] mt-[8px] ml-[-36px] flex h-[32px] w-[32px] items-start justify-start md:ml-[-19px] lg:ml-[20px]"
+          >
+            <img
+              src="./assets/close-icon.svg"
+              class="cursor-pointer"
+              id="close"
+            />
+          </div>
+        </div>
+
+        <h2
+          class="mb-[8px] font-quicksand text-xl font-semibold text-primary-color lg:text-xl"
+        >
+          Enviado con éxito
+        </h2>
+        <p
+          class="mb-[24px] text-center font-quicksand text-[16px] font-medium text-secondary-color"
+        >
+          Gracias por contactar con MelodySign, le escribiremos pronto.
+        </p>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
   </body>
 </html>
