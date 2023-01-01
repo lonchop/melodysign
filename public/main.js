@@ -2,8 +2,15 @@ const $form = document.getElementById("form");
 const $name = document.getElementById("name");
 const $email = document.getElementById("email");
 const $error = document.getElementById("error");
+const $modal = document.getElementById("modal");
+const $close = document.getElementById("close");
 
 $form.addEventListener("submit", sendEmail);
+
+$close.addEventListener("click", () => {
+  $modal.classList.add("hidden");
+  $modal.classList.remove("flex");
+});
 
 async function sendEmail(event) {
   event.preventDefault();
@@ -19,10 +26,15 @@ async function sendEmail(event) {
     });
     if (response.ok) {
       this.reset();
-      alert("Thank you for contacting MelodySign, I will write to you soon.");
       $name.style.border = "none";
       $email.style.border = "none";
       $error.style.display = "none";
+      $modal.classList.add("flex");
+      $modal.classList.remove("hidden");
+      // setTimeout(function () {
+      //   $modal.classList.add("hidden");
+      //   $modal.classList.remove("flex");
+      // }, 3000);
     }
   } else {
     if (event.target[0].value.length === 0) {
