@@ -9,7 +9,7 @@ const $close = document.getElementById("close");
 // Este evento se activa cuando se envía el formulario.
 $form.addEventListener("submit", sendEmail);
 
-// Este evento se activa cuando se hace click en el botón "Cerrar" del modal.
+// Este evento se activa cuando se hace click en el botón "Close" del modal.
 $close.addEventListener("click", () => {
   // Añade la clase "hidden" al modal y elimina la clase "flex".
   $modal.classList.add("hidden");
@@ -45,7 +45,7 @@ async function sendEmail(event) {
 
     // Si los campos "Name" y "Email" no tienen algún valor, entra aqui.
   } else {
-    // Si el campo "Nombre" está vacío, muestra el mensaje de error y añade un borde rojo al campo "Nombre".
+    // Si el campo "Name" está vacío, muestra el mensaje de error y añade un borde rojo al campo "Name".
     if (event.target[0].value.length === 0) {
       $error.style.display = "block";
       $name.style.border = "2px solid #e51a4c";
