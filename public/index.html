@@ -18,7 +18,7 @@
 
   <body class="bg-background-color">
     <header class="mb-[80px] w-full lg:mb-[0px] lg:h-screen">
-      <section class="mt-[48px] mb-[20px] flex w-full justify-center">
+      <div class="mt-[48px] mb-[20px] flex w-full justify-center">
         <div class="mr-[8px] flex items-center justify-center">
           <img
             class="h-[40px] w-[40px] md:h-[48px] md:w-[48px] lg:h-[60px] lg:w-[60px]"
@@ -31,8 +31,8 @@
         >
           MelodySign
         </h1>
-      </section>
-      <section class="lg:mx[8px] mx-[8px] flex justify-center">
+      </div>
+      <div class="lg:mx[8px] mx-[8px] flex justify-center">
         <img
           class="mr-[8px] h-[400px] w-[44px] lg:mr-[8px] lg:h-[400px] lg:w-[44px]"
           src="./assets/union.svg"
@@ -82,15 +82,15 @@
           </form>
           <div class="mr-[40px]">
             <p
-              id="error"
               class="hidden text-center font-quicksand text-base font-medium text-black-color"
+              id="error"
             >
               <span class="font-semibold">Error:</span> Por favor rellene el
               formulario correctamente.
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </header>
 
     <footer
@@ -102,7 +102,7 @@
         >
           Copyright © 2022 MelodySign
         </li>
-        <div class="flex items-center justify-center space-x-6">
+        <li class="flex items-center justify-center space-x-6">
           <a href="https://github.com/lonchop/melodysign" target="_blank">
             <img src="./assets/github-icon.svg" alt="github-icon" />
           </a>
@@ -116,7 +116,7 @@
               alt="fiverr-icon"
             />
           </a>
-        </div>
+        </li>
       </ul>
     </footer>
 
@@ -130,15 +130,16 @@
       >
         <div class="flex w-[320px] justify-end md:w-[400px] lg:w-[480px]">
           <div>
-            <img src="./assets/modal-image.svg" />
+            <img src="./assets/modal-image.svg" alt="modal-image" />
           </div>
           <div
             class="mr-[8px] mt-[8px] ml-[-36px] flex h-[32px] w-[32px] items-start justify-start md:ml-[-19px] lg:ml-[20px]"
           >
             <img
-              src="./assets/close-icon.svg"
               class="cursor-pointer"
               id="close"
+              src="./assets/close-icon.svg"
+              alt="close-icon"
             />
           </div>
         </div>
