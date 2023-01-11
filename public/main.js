@@ -11,9 +11,10 @@ $form.addEventListener("submit", sendEmail);
 
 // Este evento se activa cuando se hace click en el botón "Close" del modal.
 $close.addEventListener("click", () => {
-  // Añade la clase "hidden" al modal y elimina la clase "flex".
-  $modal.classList.add("hidden");
-  $modal.classList.remove("flex");
+  $modal.classList.add("opacity-0");
+  $modal.classList.remove("opacity-100");
+  $modal.classList.add("invisible");
+  $modal.classList.remove("visible");
 });
 
 // Esta función se encarga de enviar el correo electrónico.
@@ -39,8 +40,11 @@ async function sendEmail(event) {
       $name.style.border = "none";
       $email.style.border = "none";
       $error.style.display = "none";
-      $modal.classList.add("flex");
-      $modal.classList.remove("hidden");
+      $modal.classList.add("opacity-100");
+      $modal.classList.remove("opacity-0");
+      $modal.classList.add("visible");
+      $modal.classList.remove("invisible");
+
     }
 
     // Si los campos "Name" y "Email" no tienen algún valor, entra aqui.
