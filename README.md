@@ -1,6 +1,6 @@
 <h1 align="center" id="title">MelodySign</h1>
 
-MelodySign is a landing page, where you can get in touch by filling out a form, to get a melody, music and lyrics composition service.
+Landing page, where you can get in touch by filling out a form, to get a melody, music and lyrics composition service.
 
 ## Table of Contents
 
@@ -38,4 +38,3 @@ Technologies used in the project:
 ## Author
 
 Made with ❤️‍🔥 by [lonchop](https://github.com/lonchop)
-
